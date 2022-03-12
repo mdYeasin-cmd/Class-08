@@ -1,0 +1,88 @@
+/* Common CSS start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* Common CSS end */
+
+/* Menu start */
+nav{
+    background-color: #ef9c15;
+}
+
+nav .container > ul{
+    margin-top: 50px;
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s linear;
+}
+
+nav ul li a:hover {
+    background-color: #ebba6b;
+    color: #000; 
+}
+
+nav ul li a.seminars{
+    background-color: red;
+}
+
+nav ul li a.seminars:hover{
+    color: #fff;
+}
+
+nav ul li ul{
+    list-style-type: none;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ef9c15;
+    transition: all 0.5s linear;
+}
+
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+nav ul li ul li a.admission{
+    display: inline-block;
+    width: 195px;
+}
+
+nav ul li ul li a.freelancing{
+    display: inline-block;
+    width: 190px;
+}
+
+nav ul li ul li a.others{
+    display: inline-block;
+    width: 150px;
+}
+/* Menu end */
+
+
+
